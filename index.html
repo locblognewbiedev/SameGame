@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div class="banner">
+            <h3 class="banner_header">welcome to samegame</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+
+            <div class="level_bar">
+                <button class="btn_level easy" onclick="LevelFunction.easy()">easy</button>
+                <button class="btn_level medium" onclick="LevelFunction.medium()">medium</button>
+                <button class="btn_level hard" onclick="LevelFunction.hard()">hard</button>
+            </div>
+            <br />
+            <br />
+            <div style="width: 300px; height: 400px;">
+                <div class="canvas_border">
+                    <canvas width="300px" height="300px" id="canvas"></canvas>
+                </div>
+                <br />
+                <div class="score_bar">
+                    <button onclick="LevelFunction.easy()">New Game</button>
+                    <p id="score">Score: 0</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <p>&copy; by duong phuoc loc</p>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
